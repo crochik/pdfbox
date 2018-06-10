@@ -4,7 +4,7 @@ Encrypt/Decrypt PDF files in any platform without installing anything but docker
 ```docker build -t crochik/pdfbox .```
 
 # Encrypt file
-```docker run -it -v $PWD:/home crochik/pdfbox Encrypt -U <password> <input> <output>```
+```docker run -it -v $PWD:/home crochik/pdfbox Encrypt -U <password> -keyLength 256 <input> <output>```
 
 # Decrypt file
 ```docker run -it -v $PWD:/home crochik/pdfbox Decrypt -password <password> <input> <output>```
